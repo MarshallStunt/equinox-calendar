@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Equinox Calendar",
+  "version": "1.1.0",
+  "description": "A calendar whose year begins at the spring equinox: 13 months of 28 days, or lunar months, with moon phases.",
+  "permissions": ["storage", "alarms"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Equinox Calendar",
+    "default_icon": { "16": "icons/icon16.png", "32": "icons/icon32.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+  },
+  "icons": { "16": "icons/icon16.png", "32": "icons/icon32.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+}

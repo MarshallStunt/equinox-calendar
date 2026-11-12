@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Equinox Year</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="year-page">
+    <div class="year-top">
+      <div>
+        <div class="eyebrow" id="eyebrow"></div>
+        <h1 id="title"></h1>
+        <div class="sub" id="sub"></div>
+      </div>
+      <div class="controls">
+        <button class="icon-btn" id="prev" title="Previous year">‹</button>
+        <button id="today-btn">This year</button>
+        <button class="icon-btn" id="next" title="Next year">›</button>
+        <select id="mode" aria-label="Month system">
+          <option value="fixed">13 × 28 days</option>
+          <option value="lunar">Lunar months</option>
+        </select>
+        <select id="hemisphere">
+          <option value="north">North · March equinox</option>
+          <option value="south">South · September equinox</option>
+        </select>
+        <label class="toggle"><input type="checkbox" id="greg"> Gregorian dates</label>
+        <label class="toggle"><input type="checkbox" id="moon"> Moon phases</label>
+      </div>
+    </div>
+    <div class="year-grid" id="grid"></div>
+    <p class="legend">
+      Each year has <b>13 months of 28 days</b> (exactly four weeks), so every month in a year
+      starts on the same weekday. The year begins on the day of the <b>spring equinox</b>, and the
+      one or two <b>Threshold Days</b> left over close the year before the next equinox. The small moon on each day shows its
+      phase at local noon; outlined days hold a <b>new, first-quarter, full or last-quarter moon</b>
+      (hover for the exact time). In <b>lunar months</b> mode the year instead starts at the first
+      new moon on or after the equinox, and each month runs from one new moon to the next.
+      <a href="about.html" class="about-cta">Why this calendar, and how it follows nature →</a>
+    </p>
+  </main>
+  <script src="calendar-core.js"></script>
+  <script src="ui.js"></script>
+  <script src="calendar.js"></script>
+</body>
+</html>

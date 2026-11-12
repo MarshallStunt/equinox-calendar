@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Why the Equinox Calendar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="about">
+    <nav class="about-nav">
+      <a href="calendar.html">← Year view</a>
+      <select id="hemisphere" aria-label="Hemisphere">
+        <option value="north">Northern hemisphere</option>
+        <option value="south">Southern hemisphere</option>
+      </select>
+    </nav>
+
+    <header class="about-hero">
+      <div class="eyebrow">About this calendar</div>
+      <h1>A year that starts when the Earth does</h1>
+      <p class="lede">
+        The Gregorian year begins on January 1st, a date that has no meaning in the sky.
+        This calendar begins the year on the <b>spring equinox</b>, divides it into
+        <b>13 identical months of 28 days</b>, and closes it with one or two
+        <b>Threshold Days</b>. It is a way of keeping time that follows the sun, the seasons
+        and the moon.
+      </p>
+    </header>
+
+    <section class="wheel-section">
+      <div class="wheel-wrap" id="wheel"></div>
+      <div class="wheel-notes">
+        <h2>The year as a wheel</h2>
+        <p id="wheel-caption"></p>
+        <ul class="markers" id="markers"></ul>
+      </div>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <div class="card-icon">☀︎</div>
+        <h3>A natural starting line</h3>
+        <p>
+          At the equinox the sun sits directly over the equator and day and night are close to
+          equal everywhere on Earth. From that moment the days grow longer than the nights. It is
+          a precise astronomical event, not a convention, so the year begins when spring does.
+        </p>
+      </article>
+      <article class="card">
+        <div class="card-icon">▦</div>
+        <h3>Months that all match</h3>
+        <p>
+          Each month is exactly four weeks long. The 13th of any month falls on the same weekday as
+          the 13th of every other month that year. There are no 30-or-31 rhymes to remember,
+          and no February. Months are equal, so comparing one with another is fair.
+        </p>
+      </article>
+      <article class="card">
+        <div class="card-icon">◐</div>
+        <h3>Closer to the moon</h3>
+        <p>
+          A 28-day month sits between the moon's orbit around the Earth (27.3 days) and its
+          cycle of phases (29.5 days). The moon circles the Earth about 13.4 times a year,
+          so a 13-month year follows its rhythm more closely than a 12-month one.
+        </p>
+      </article>
+      <article class="card">
+        <div class="card-icon">✦</div>
+        <h3>The year corrects itself</h3>
+        <p>
+          The Gregorian calendar needs leap-year rules to stay in step with the seasons.
+          This calendar has none. Each year runs from one real equinox to the next, so it is
+          365 or 366 days by itself. The Threshold Days take up the difference.
+        </p>
+      </article>
+    </section>
+
+    <section class="prose">
+      <h2>An old idea, not a new one</h2>
+      <p>
+        Starting the year in spring is how many people kept time for most of history.
+      </p>
+      <ul class="history">
+        <li><b>Nowruz</b>, the Persian New Year, begins at the March equinox. It has been
+          celebrated for over 3,000 years and is still observed by around 300 million people.</li>
+        <li><b>Babylon</b> opened its year with the Akitu festival in the month of Nisannu,
+          at the spring equinox.</li>
+        <li>The early <b>Roman</b> year began in March. That is why September, October,
+          November and December are named for the numbers 7, 8, 9 and 10. They used to be
+          the seventh to tenth months.</li>
+        <li><b>England and its colonies</b> began the legal year on March 25th until 1752.</li>
+        <li>The <b>13 × 28</b> layout was proposed by Moses Cotsworth in 1902 as the
+          International Fixed Calendar. <b>Eastman Kodak</b> ran its business on it from 1928
+          to 1989.</li>
+      </ul>
+    </section>
+
+    <section class="prose">
+      <h2>The thirteen months</h2>
+      <p>
+        The names follow the seasons from spring to spring. Because the year starts at <i>your</i>
+        spring, they fit both hemispheres. In the south the year begins at the September
+        equinox, so Solara still brings the summer sun and Umbra still holds the longest night.
+      </p>
+      <ol class="month-list" id="month-list"></ol>
+    </section>
+
+    <section class="prose">
+      <h2>How it lines up with nature</h2>
+      <p>
+        Because the year starts on the equinox, the other turning points of the year land in
+        nearly the same place every year. In the Gregorian calendar they also stay in roughly the
+        same place, but on dates no one thinks of as special. Here they mark the year's real
+        structure. Midsummer is always early in Solara, the autumn equinox falls in
+        Messis, the harvest month, and the longest night falls in late Umbra, the month of
+        shadow.
+      </p>
+      <p>
+        The moon is shown on every day as it really is, because 28-day months do not lock to
+        the 29.5-day lunar cycle. Each month drifts about a day and a half against the moon,
+        so the full moon moves gradually through the months. That is a real rhythm worth
+        watching too.
+      </p>
+    </section>
+
+    <section class="prose">
+      <h2>Lunar mode: months that follow the moon</h2>
+      <p>
+        The 13 × 28 layout keeps every month equal, but it can't keep months in step with the moon.
+        The moon takes about <b>29.5 days</b> to go from one new moon to the next. Switch to
+        <b>Lunar months</b> and the calendar works the way the Babylonian, Hebrew and Chinese
+        calendars do:
+      </p>
+      <ul>
+        <li>The year begins at the <b>first new moon on or after the spring equinox</b>.</li>
+        <li>Every month begins on the day of a new moon and lasts <b>29 or 30 days</b>.</li>
+        <li>An equinox year holds about 12.4 moon cycles. Most years have <b>12 months</b>
+          (about 354 days). About one year in three has a 13th month, <b>Renova</b>, when another new
+          moon arrives before the equinox (about 384 days).</li>
+        <li>New Year moves from year to year, but always falls within about 30 days after the
+          equinox (between March 20 and April 19 in the north).</li>
+      </ul>
+      <p>
+        The trade-off is the reverse of the fixed calendar. The moon and the months always match,
+        but months differ in length and start on different weekdays.
+      </p>
+    </section>
+
+    <section class="prose">
+      <h2>Honest trade-offs</h2>
+      <ul>
+        <li><b>The world runs on Gregorian dates.</b> Use this calendar alongside them, not instead
+          of them. That's why every day shows its Gregorian date.</li>
+        <li><b>The weekday shifts each year.</b> Within a year every month starts on the same weekday.
+          The Threshold Days are real weekdays here, so the next year starts one or two weekdays
+          later. (Cotsworth's plan kept them outside the week, which breaks the seven-day cycle.)</li>
+        <li><b>New Year's Day depends on where you are.</b> The equinox is a single instant, so its
+          local date can differ by a day between time zones.</li>
+        <li><b>Months are not lunar months.</b> 28 days comes close to the moon's cycle but does
+          not match it exactly.</li>
+      </ul>
+    </section>
+
+    <section class="prose">
+      <h2>Reading the calendar</h2>
+      <dl class="legend-list">
+        <dt>13 Brumis</dt><dd>Day 13 of Brumis, the ninth month.</dd>
+        <dt>Threshold Day</dt><dd>One of the 1–2 days that close the year before the next equinox.</dd>
+        <dt>Equinox Year 2026</dt><dd>The year that began at the spring equinox of 2026.</dd>
+        <dt>Outlined day</dt><dd>A new, first-quarter, full or last-quarter moon falls that day.</dd>
+        <dt>Badge on the icon</dt><dd>Today's day of the month.</dd>
+      </dl>
+    </section>
+  </main>
+  <script src="calendar-core.js"></script>
+  <script src="ui.js"></script>
+  <script src="about.js"></script>
+</body>
+</html>

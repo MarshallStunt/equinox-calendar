@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Equinox Calendar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="popup">
+  <div class="hero">
+    <div class="hero-top">
+      <div class="eyebrow" id="eyebrow"></div>
+      <div class="hero-actions" id="hero-actions">
+        <a class="info-link" id="about-link" href="about.html" target="_blank">Why?</a>
+      </div>
+    </div>
+    <div class="today-big" id="today"></div>
+    <div class="sub" id="sub"></div>
+    <div class="progress"><div id="bar"></div></div>
+    <div class="moon-row" id="moon-row"></div>
+  </div>
+  <div class="nav">
+    <button class="icon-btn" id="prev" title="Previous month">‹</button>
+    <span class="label" id="nav-label"></span>
+    <button class="icon-btn" id="next" title="Next month">›</button>
+  </div>
+  <div class="month-wrap" id="month"></div>
+  <footer>
+    <select id="mode" title="How the year is divided into months">
+      <option value="fixed">13 × 28 days</option>
+      <option value="lunar">Lunar months</option>
+    </select>
+    <select id="hemisphere" title="Which equinox starts the year">
+      <option value="north">North (Mar)</option>
+      <option value="south">South (Sep)</option>
+    </select>
+    <label class="toggle"><input type="checkbox" id="greg"> Gregorian</label>
+    <label class="toggle"><input type="checkbox" id="moon"> Moon</label>
+    <span class="spacer"></span>
+    <button id="today-btn">Today</button>
+    <button id="year-btn">Year view</button>
+  </footer>
+  <script src="calendar-core.js"></script>
+  <script src="ui.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
